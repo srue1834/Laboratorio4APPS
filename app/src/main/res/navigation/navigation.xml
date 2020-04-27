@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.zevent.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.zevent.Registro"
+        android:label="Registro"
+        tools:layout="@layout/fragment_registro"/>
+    <fragment
+        android:id="@+id/resultados"
+        android:name="com.example.lab4.Resultados"
+        android:label="Resultados"
+        tools:layout="@layout/fragment_resultados">
+        <action
+            android:id="@+id/action_resultados_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acerca"
+        android:name="com.example.zevent.Acerca"
+        android:label="Acerca"
+        tools:layout="@layout/fragment_acerca"/>
+
+
+</navigation>

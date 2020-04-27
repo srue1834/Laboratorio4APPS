@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Zevent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textoZ">Soy una aplicación dedicada a la administración de invitados para todo evento privado. </string>
+    <string name="acerca">Acerca de</string>
+    <string name="inicio">Inicio</string>
+    <string name="telefono">53675442</string>
+    <string name="nombre">Jaime González</string>
+    <string name="email">jaime@gmail.com</string>
+    <string name="num">(0/10)</string>
+</resources>
