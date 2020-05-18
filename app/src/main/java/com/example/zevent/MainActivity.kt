@@ -8,6 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.zevent.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.fragment_resultados.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -21,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.myNavHostFragment)
 
         NavigationUI.setupActionBarWithNavController(this,navController, drawerLayout)
-
         NavigationUI.setupWithNavController(binding.navView, navController)
+
 
     }
 

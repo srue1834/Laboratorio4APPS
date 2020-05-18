@@ -1,4 +1,4 @@
-package com.example.zevent
+package com.example.zevent.acerca
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.zevent.R
 
 class Acerca : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

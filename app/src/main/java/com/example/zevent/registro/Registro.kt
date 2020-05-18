@@ -1,10 +1,11 @@
-package com.example.zevent
+package com.example.zevent.registro
 
 import android.os.Bundle
 import android.view.*
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import com.example.zevent.R
 import com.example.zevent.databinding.FragmentRegistroBinding
 
 
@@ -13,7 +14,7 @@ import com.example.zevent.databinding.FragmentRegistroBinding
  */
 @Suppress("UNREACHABLE_CODE")
 
-class Registro : Fragment() {
+class Registro() : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,8 +22,8 @@ class Registro : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
          val binding = DataBindingUtil.inflate<FragmentRegistroBinding>(
-            inflater, R.layout.fragment_registro, container, false)
-
+            inflater,
+             R.layout.fragment_registro, container, false)
 
         setHasOptionsMenu(true)
         return binding.root
@@ -38,33 +39,7 @@ class Registro : Fragment() {
         inflater?.inflate(R.menu.registrados_menu, menu)
 
     }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-
-        val id = item.itemId
-
-        val cantidad_id = R.id.cantidad
-        val check_id = R.id.check
-        val x_id = R.id.x
-
-        var invitados = 0
-        var registrados = 0
-
-        //(activity as AppCompatActivity).supportActionBar?.title = getString()
-
-        if (id == check_id) {
-            invitados++
-            registrados++
-
-        }
-
-        if (id == x_id) {
-            invitados++
-            registrados--
-        }
-
-        return super.onOptionsItemSelected(item)
-    }
 }
 
 

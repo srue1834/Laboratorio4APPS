@@ -10,13 +10,13 @@
     </item>
     <item
         android:id="@+id/check"
-        android:icon="@drawable/ic_check"
-        android:title="check"
+        android:icon="@drawable/si"
+        android:title="si"
         app:showAsAction="ifRoom"></item>
     <item
         android:id="@+id/x"
-        android:icon="@drawable/ic_x"
-        android:title="x"
+        android:icon="@drawable/no"
+        android:title="no"
         app:showAsAction="ifRoom"></item>
 
 </menu>

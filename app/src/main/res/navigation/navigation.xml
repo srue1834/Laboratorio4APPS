@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/registro"
-        android:name="com.example.zevent.Registro"
+        android:name="com.example.zevent.registro.Registro"
         android:label="Registro"
         tools:layout="@layout/fragment_registro"/>
     <fragment
@@ -31,9 +31,29 @@
     </fragment>
     <fragment
         android:id="@+id/acerca"
-        android:name="com.example.zevent.Acerca"
+        android:name="com.example.zevent.acerca.Acerca"
         android:label="Acerca"
         tools:layout="@layout/fragment_acerca"/>
+    <fragment
+        android:id="@+id/invitados"
+        android:name="com.example.zevent.invitados.Invitados"
+        android:label="Invitados"
+        tools:layout="@layout/fragment_invitados"/>
+    <fragment
+        android:id="@+id/agregar"
+        android:name="com.example.zevent.agregar.Agregar"
+        android:label="Agregar"
+        tools:layout="@layout/fragment_agregar"/>
+    <fragment
+        android:id="@+id/agregarRol"
+        android:name="com.example.zevent.agregar.AgregarRol"
+        android:label="AgregarRol"
+        tools:layout="@layout/fragment_agregar_rol2"/>
+    <fragment
+        android:id="@+id/roles"
+        android:name="com.example.zevent.roles.Roles"
+        android:label="Roles"
+        tools:layout="@layout/fragment_roles"/>
 
 
 </navigation>
